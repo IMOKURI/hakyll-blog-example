@@ -1,0 +1,21 @@
+Here you can find all my previous posts:
+$partial("templates/post-list.html")$
+
+<div class="pagination">
+  $if(firstPageUrl)$
+    <a href="$firstPageUrl$">&lt;&lt;&nbsp;First</a>&nbsp;
+  $endif$
+  $if(previousPageUrl)$
+    <a href="$previousPageUrl$">&lt;&nbsp;Previous</a>&nbsp;
+  $endif$
+  &mdash;
+  $currentPageNum$ of $numPages$
+  &mdash;
+  $if(nextPageUrl)$
+    &nbsp;<a href="$nextPageUrl$">Next&nbsp;&gt;</a>
+  $endif$
+  $if(lastPageUrl)$
+    &nbsp;<a href="$lastPageUrl$">Last&nbsp;&gt;&gt;</a>
+  $endif$
+</div>
+
